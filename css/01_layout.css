@@ -14,15 +14,6 @@ https://notes.zander.wtf/ios-safari-height-bug
   }
 }
 
-header {
-  background: salmon;
-  height: 5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 main {
   flex-grow: 1;
   background: slateblue;
