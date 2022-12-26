@@ -1,3 +1,31 @@
-body {
-  background: url(../img/main-visual.jpg) no-repeat 50% 0/ 1440px;
+.wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+/* 사파리 호환성을 위함 : https://notes.zander.wtf/ios-safari-height-bug */
+@supports (-webkit-touch-callout: none) {
+  .wrap {
+    min-height: -webkit-fill-available;
+  }
+}
+
+header {
+  background: salmon;
+}
+
+main {
+  background: slateblue;
+  flex-grow: 1;
+}
+
+footer {
+  background: skyblue;
+}
+
+.max-width {
+  background: rgba(0, 0, 0, 0.5);
+  width: min(calc(var(--max-width) * 1rem), 100%);
+  margin: auto;
 }
