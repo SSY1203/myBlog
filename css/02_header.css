@@ -1,8 +1,34 @@
 header {
-  background: salmon;
   height: 5em;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+header .max-width {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header h1 {
+  height: 3.2rem;
+  /* margin: auto auto auto 0; */
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.profile-btn {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
