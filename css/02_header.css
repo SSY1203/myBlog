@@ -4,6 +4,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  /* align-items의 기본값이 center */
 }
 
 header .max-width {
@@ -11,6 +13,7 @@ header .max-width {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
+  gap: 1rem;
 }
 
 header h1 {
@@ -28,6 +31,47 @@ header h1 {
 }
 
 .profile-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-form input {
+  background: none;
+  border: 1px solid rgba(var(--rgb-light), 0.5);
+  height: 4.4rem;
+  border-radius: 2.2rem;
+  padding: 0 1em;
+  /* text-indent: 1em; */
+  color: rgba(var(--rgb-light), 1);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.search-form input:focus {
+  opacity: 1;
+}
+
+.search-form input::placeholder {
+  color: rgba(var(--rgb-light), 1);
+}
+
+.search-form button {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.6em;
+}
+
+.search-form button img {
   width: 100%;
   height: 100%;
   object-fit: cover;
