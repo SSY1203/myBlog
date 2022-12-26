@@ -6,6 +6,7 @@ header {
   width: 100%;
   display: flex;
   /* align-items의 기본값이 center */
+  z-index: 100;
 }
 
 header .max-width {
